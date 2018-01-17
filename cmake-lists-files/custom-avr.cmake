@@ -79,12 +79,12 @@ endif(CMAKE_BUILD_TYPE MATCHES Debug)
 add_definitions("-fpack-struct")
 add_definitions("-fshort-enums")
 add_definitions("-Wall")
-add_definitions("-Werror")
+#add_definitions("-Werror")
 # http://gcc.gnu.org/onlinedocs/gcc-4.8.2/gcc/Alternate-Keywords.html#Alternate-Keywords
 # [...]-pedantic and other options cause warnings for many GNU C extensions. You can prevent such warnings within
 # one expression by writing __extension__ before the expression. __extension__ has no effect aside from this.[...]
 add_definitions("-pedantic")
-add_definitions("-pedantic-errors")
+#add_definitions("-pedantic-errors")
 add_definitions("-funsigned-char")
 add_definitions("-funsigned-bitfields")
 add_definitions("-ffunction-sections")
